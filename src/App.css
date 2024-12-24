@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Nunito", serif;
+    margin-top: 70px;
+    background-color: #93a35c;
+    /* background-color: #444444; */
+}
+
+/* h1{
+    color: white;
+} */
+
+.buttons-div{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.buttons-div button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+    background-color: #6C5CA3;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.buttons-div button img{
+    height: 50px;
+    width: 50px;
+}
+
+.choice-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.choice-div p{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.scores-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.scores-div p{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 400px){
+    .buttons-div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons-div button{
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 800px){
+    h1{
+        text-align: center;
+    }
+}
